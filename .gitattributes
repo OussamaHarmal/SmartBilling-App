@@ -1,3 +1,4 @@
 *.py linguist-language=Python
 *.ui linguist-language=Python
 *.ui linguist-generated=true
+*.html linguist-detectable=false
