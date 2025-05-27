@@ -105,7 +105,7 @@ SmartBilling/
 
 ## 📌 Auteurs
 
-Développé par **Oussama Harmal** & **Abdelatif Boufouss** dans le cadre du PFE 2025.
+Développé par **Oussama Harmal**.
 
 ---
 
