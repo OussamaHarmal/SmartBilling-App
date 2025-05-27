@@ -1,0 +1,6 @@
+PyQt6
+SQLAlchemy
+psycopg2-binary
+reportlab
+smtplib3  
+openpyxl  
