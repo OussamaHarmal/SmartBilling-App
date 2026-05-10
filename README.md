@@ -18,7 +18,7 @@ Une application de bureau complète pour la gestion des factures et l'analyse de
 ## 🛠️ Technologies utilisées
 
 - Python 🐍
-- PyQt5 🎨
+- PyQt6 🎨
 - Pandas 📊
 - PostgreSQL 🐘
 - ReportLab / FPDF 🖨️
@@ -73,7 +73,7 @@ CREATE TABLE IF NOT EXISTS invoices (
 DB_HOST = "localhost"
 DB_NAME = "facturation"
 DB_USER = "postgres"
-DB_PASSWORD = "admin"
+DB_PASSWORD = "#####"
 DB_PORT = "5432"
 ```
 
