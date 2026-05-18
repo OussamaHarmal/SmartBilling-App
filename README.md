@@ -1,122 +1,67 @@
-# 📊 SmartBilling & Analytics App
+# Smart Billing & Analytics Platform
+## Tech Stack
 
-Une application de bureau complète pour la gestion des factures et l'analyse de performance des ventes, développée avec **PyQt**, **Pandas**, et **PostgreSQL**.
+### Backend
+- Python
+- SQLAlchemy
+- PostgreSQL
 
----
+### Frontend
+- PyQt6
+- Qt Designer
 
-## 🧠 Fonctionnalités principales
+### Data Science
+- Scikit-learn
+- XGBoost
+- Pandas
+- NumPy
 
-- 📋 Gestion des factures (ajout, modification, suppression)
-- 🔎 Filtres dynamiques (par date, ville, statut...)
-- 📊 Page statistiques avec graphiques interactifs
-- 🧾 Export PDF + Envoi par e-mail
-- 🗃️ Connexion à une base de données PostgreSQL
-- 🖥️ Interface moderne (PyQt)
-
----
-
-## 🛠️ Technologies utilisées
-
-- Python 🐍
-- PyQt6 🎨
-- Pandas 📊
-- PostgreSQL 🐘
-- ReportLab / FPDF 🖨️
-- Matplotlib / Seaborn 📉
+### Visualization
+- Plotly
+- Matplotlib
 
 ---
 
-## 🧑‍💻 Installation locale
+## System Architecture
 
-### 1. Cloner le projet
+[ADD ARCHITECTURE IMAGE HERE]
+
+---
+
+## Screenshots
+
+### Dashboard
+<img width="1919" height="1008" alt="Capture d&#39;écran 2025-05-27 151016" src="https://github.com/user-attachments/assets/e33bc9d5-18ab-44ed-9942-d762e26ed3e2" />
+
+### client Management
+<img width="1915" height="1004" alt="Capture d&#39;écran 2025-05-27 151050" src="https://github.com/user-attachments/assets/36e82ae6-d903-4ad9-ba00-f1d81679449f" />
+
+
+### Invoice Management
+<img width="1919" height="1010" alt="Capture d&#39;écran 2025-05-27 151112" src="https://github.com/user-attachments/assets/383bc6e8-c764-4e49-a912-485132e3ff9c" />
+
+
+### Analytics
+<img width="1919" height="1000" alt="Capture d&#39;écran 2025-05-27 151147" src="https://github.com/user-attachments/assets/480335da-9085-4ce5-97c7-c6fdca963935" />
+<img width="1861" height="829" alt="Capture d&#39;écran 2025-05-27 151231" src="https://github.com/user-attachments/assets/6411c670-ae47-44e1-941f-122caf7a054b" />
+
+---
+
+## Machine Learning Pipeline
+
+1. Data Collection
+2. Data Cleaning
+3. Feature Engineering
+4. Model Training
+5. Revenue Prediction
+6. Visualization
+
+---
+
+## Installation
 
 ```bash
-git clone https://github.com/OussamaHarmal/SmartBilling.git
-cd SmartBilling
-```
-
-### 2. Créer un environnement virtuel (optionnel mais recommandé)
-
-```bash
-python -m venv env
-source env/bin/activate  # sous Windows: env\Scripts\activate
-```
-
-### 3. Installer les dépendances
-
-```bash
+git clone https://github.com/USERNAME/smart-billing-app.git
+cd smart-billing-app
 pip install -r requirements.txt
-```
-
-### 4. Configurer PostgreSQL
-
-1. Assurez-vous que PostgreSQL est installé.
-2. Créez une base de données nommée `smartbilling`.
-3. Exécutez le script suivant pour générer les tables nécessaires :
-
-```sql
--- database_schema.sql
-CREATE TABLE IF NOT EXISTS invoices (
-    id SERIAL PRIMARY KEY,
-    client_name TEXT NOT NULL,
-    city TEXT NOT NULL,
-    status TEXT NOT NULL,
-    total_amount NUMERIC,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
-
-4. Ajoutez vos identifiants PostgreSQL dans le fichier `config.py` :
-
-```python
-# config.py
-DB_HOST = "localhost"
-DB_NAME = "facturation"
-DB_USER = "postgres"
-DB_PASSWORD = "#####"
-DB_PORT = "5432"
-```
-
-### 5. Lancer l'application
-
-```bash
 python main.py
-```
-
----
-
-## 📂 Arborescence du projet
-
-```
-SmartBilling/
-│
-├── main.py                  # Script principal PyQt
-├── config.py                # Connexion PostgreSQL
-├── requirements.txt         # Dépendances
-├── database_schema.sql      # Script de création DB
-├── ui/                      # Fichiers .ui (PyQt Designer)
-├── data/                    # CSV ou autres données
-├── assets/                  # Icônes, logos, etc.
-├── .gitattributes           # Corrige la langue sur GitHub
-└── README.md
-```
-
----
-
-## 📌 Auteurs
-
-Développé par **Oussama Harmal**.
-
----
-
-## 🪪 Licence
-
-Ce projet est **privé**. Toute utilisation, modification ou distribution est interdite sans l'autorisation des auteurs.
-
----
-
-## 🤝 Contact
-
-- 📧 Email : oussamaharmal2@gmail.com
-- 📍 Ville : Casablanca, Maroc
-- 🔗 GitHub : [OussamaHarmal](https://github.com/OussamaHarmal)
